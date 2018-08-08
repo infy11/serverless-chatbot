@@ -1,0 +1,22 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+
+    <style name="CustomActionBarTheme"
+        parent="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="android:colorPrimary">@color/action_background</item>
+        <item name="android:colorPrimaryDark">@color/statusbar</item>
+        <item name="colorAccent">@color/action_background</item>
+        <item name="colorPrimary">@color/action_background</item>
+        <item name="colorPrimaryDark">@color/statusbar</item>
+
+
+
+
+        <!-- Support library compatibility -->
+
+    </style>
+    <!-- ActionBar styles -->
+
+
+
+</resources>
