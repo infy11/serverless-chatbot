@@ -1,0 +1,9 @@
+.card1 {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 20px;
+  margin-top: 20px /* Added */
+}
+.swal-overlay {
+  background-color: rgba(43, 165, 137, 0.45);
+}

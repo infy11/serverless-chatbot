@@ -1,0 +1,38 @@
+
+<div class="card border-info mb-3 card1 shadow" style="max-width: 30rem;">
+  <div class="card-body">
+
+ <h4 class="card-title">Previous year paper</h4>
+
+<form class="form form-group" (ngSubmit)="onSubmit()" >
+<label for="course">
+  COURSE
+</label>
+<select class="form-control" required [(ngModel)]="paper.course" name="course" id="inlineFormCustomSelect">
+    
+    <option *ngFor="let c of course" [value]="c">{{c}}</option>
+   
+   
+    
+  </select>
+<br>
+  <label for="course">SEMESTER </label>
+    <select class="form-control" required [(ngModel)]="paper.semester" name="semester" id="inlineFormCustomSelect">
+        
+        <option *ngFor="let s of semester" [value]="s">{{s}}</option>
+        
+      </select>
+      <br>
+      <label for="course">
+          LINK
+        </label>
+
+        <input type="text" required [(ngModel)]="paper.link" name="link" class="form-control">
+<br>
+<br>
+        <input type="submit" class="btn btn-primary" [disabled]="!timetableform.form.valid">
+        
+</form>
+
+  </div>
+

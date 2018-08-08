@@ -1,0 +1,37 @@
+
+<div class="card border-info mb-3 card1 shadow" style="max-width: 30rem;">
+  <div class="card-body">
+
+ <h4 class="card-title">Add Syllabus</h4>
+
+<form class="form form-group" (ngSubmit)="onSubmit()" >
+<label for="course">
+  COURSE
+</label>
+<select class="form-control"  [(ngModel)]="model.course" name="course" id="inlineFormCustomSelect">
+   
+    <option *ngFor="let c of course" [value]="c">{{c}}</option>
+   
+   
+    
+  </select>
+<br>
+  <label for="course">SEMESTER </label>
+    <select class="form-control"  [(ngModel)]="model.semester" name="semester" id="inlineFormCustomSelect">
+        <option *ngFor="let s of semester" [value]="s">{{s}}</option>
+        
+      </select>
+      <br>
+      <label for="course">
+          LINK
+        </label>
+
+        <input type="text"  [(ngModel)]="model.link" name="link" class="form-control">
+<br>
+<br>
+        <input type="submit" class="btn btn-primary">
+
+</form>
+
+  </div>
+
